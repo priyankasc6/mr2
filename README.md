@@ -107,3 +107,71 @@
 #### End users who just want to use software without worrying about installation or updates.
 #### >Simple Example:
 #### It’s like staying in a hotel — everything’s ready for you. You just check in and use it.
+
+## TASK 4:Encryption Techniques - Secure Messaging App
+<img width="1064" height="276" alt="Screenshot 2026-01-12 001000" src="https://github.com/user-attachments/assets/0809bcc9-5768-4ea9-bb7f-1504457f4334" />
+
+## Definition of Data Encryption
+### Data encryption is the process of converting readable information (plaintext) into an unreadable format (ciphertext) using cryptographic algorithms and keys to protect data from unauthorized access. Only authorized users with the correct decryption key can convert the encrypted data back into its original form. Encryption ensures data confidentiality, privacy, and security in digital communication and storage systems.
+## Types of Data Encryption and Basic Explanation
+### 1. Encryption at Rest
+### Encryption at rest protects data that is stored in databases, files, hard drives, or cloud storage. Even if storage media is stolen or accessed without permission, the encrypted data remains unreadable.
+**Example:** Encrypted files stored in cloud storage or databases.
+## 2. Encryption in Transit
+### Encryption in transit protects data while it is being transmitted over networks such as the internet. It prevents attackers from reading or modifying data during transmission.
+**Example:** HTTPS encryption used in websites.
+## 3. Encryption in Use
+### Encryption in use protects data while it is actively being processed in memory. This type of encryption is used in advanced secure computing environments.
+## 4. Symmetric Encryption
+### Symmetric encryption uses a single secret key for both encryption and decryption. The same key must be securely shared between the sender and receiver.
+**Basic Knowledge:**
+### * Fast and efficient
+### * Used for large data encryption
+### * Key sharing is a challenge
+**Example:** AES (Advanced Encryption Standard)
+## 5. Asymmetric Encryption
+### Asymmetric encryption uses two keys: a public key for encryption and a private key for decryption. The public key can be shared openly, while the private key is kept secret.
+**Basic Knowledge:**
+### * More secure key exchange
+### * Slower than symmetric encryption
+### * Used for secure communication and authentication
+**Example:** RSA
+## 6. Encryption Algorithms
+### Encryption algorithms are mathematical methods used to encrypt and decrypt data. They define how encryption is performed.
+**Examples:** AES, RSA, DES
+## 7. Key Management
+### Key management involves generating, storing, rotating, and protecting encryption keys. Secure key management is essential to maintain encryption security.
+## 8. Hashing
+### Hashing converts data into a fixed-length value using a one-way function. The original data cannot be recovered from the hash.
+### * Used for password storage and data integrity
+### * Not used for data encryption
+**Example:** SHA-256
+## 9. Digital Signatures
+### Digital signatures use encryption and hashing to verify the authenticity and integrity of data. They confirm that data has not been altered and identify the sender.
+## 10. Access Control and Authentication
+### These mechanisms ensure that only authorized users can access encrypted data using proper credentials and permissions.
+
+## 5.Task 5:AWS CloudFront - Serve content from multiple S3 buckets
+
+#### Steps to set up dynamic content distribution for amazon s3
+##### Create an S3 bucket to store your application or website data.
+##### Upload dynamic content files to the S3 bucket and keep public access disabled.
+##### Open Amazon CloudFront and create a new web distribution.
+##### Select the S3 bucket as the origin and enable Origin Access Control (OAC).
+##### Redirect HTTP traffic to HTTPS for secure communication.
+##### Allow all HTTP methods (GET, HEAD, POST, PUT, DELETE) for dynamic operations.
+##### Disable caching by using Managed-CachingDisabled or setting TTL to zero.
+##### Enable forwarding of query strings, cookies, and required headers.
+##### Create the CloudFront distribution and wait until it is deployed.
+##### Use the CloudFront domain name to access dynamic content securely and quickly.
+
+## 6.Create an application on EC2 instance
+
+##### Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. Amazon EC2 offers many options that help you build and run virtually any application. 
+
+## 7.Database task - DynamoDB
+
+
+
+
+
